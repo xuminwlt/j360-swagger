@@ -13,6 +13,12 @@
         <module>j360-swagger-spring</module>
     </modules>
 
+    <scm>
+        <connection>scm:git:https://github.com/xuminwlt/j360-swagger.git</connection>
+        <url>https://github.com/xuminwlt/j360-swagger</url>
+        <developerConnection>scm:git:https://github.com/xuminwlt/j360-swagger.git</developerConnection>
+    </scm>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
