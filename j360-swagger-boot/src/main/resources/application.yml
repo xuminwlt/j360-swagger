@@ -1,0 +1,24 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?setUnicode=true&characterEncoding=UTF8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  http:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+server:
+  port: 9999
+
+logging:
+  config: classpath:logback-spring.xml
+  path: logs
+  level:
+    root: INFO
+    org.springframework: INFO
+    cn.paomiantv: INFO
