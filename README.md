@@ -15,14 +15,19 @@
 - 启动nginx
 - 输入http://localhost/swagger/index.html
 
+>
+    分别监听18888路由到8888服务,监听19999路由到9999服务,10000端口为swagger-ui入口
+
 ## swagger-boot
 
 - 启动swagger-boot服务
 
-mvn package 生成target/j360-swagger-boot.zip
-unzip j360-swagger-boot.zip
-spring-boot服务进行jar打包,启动脚本 bin/service.sh
-命令: service.sh start/status/stop/restart/console/
+1. mvn package 生成target/j360-swagger-boot.zip
+2. unzip j360-swagger-boot.zip
+3. spring-boot服务进行jar打包,启动脚本 bin/service.sh,端口号9999
+
+>
+    命令: service.sh start/status/stop/restart/console/
 
 ```
 mvn package
@@ -35,8 +40,14 @@ http://localhost:9999/v2/api-docs?group=api
 
 ## swagger-spring
 
-- serlvet3.0零配置服务
-- 将war cp到tomcat或者jetty启动
+serlvet3.0+springmvn零配置web服务
+
+### 启动
+
+1. mvn jetty:run 启动,端口号8888
+
+>
+    将war cp到tomcat或者jetty启动
 
 
 >
