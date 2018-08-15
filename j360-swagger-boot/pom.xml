@@ -211,7 +211,7 @@
                             <finalName>${project.artifactId}</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                             <descriptors>
-                                <descriptor>./../script/assembly/assembly-descriptor.xml</descriptor>
+                                <descriptor>./../script/assembly/assembly-boot.xml</descriptor>
                             </descriptors>
                         </configuration>
                     </execution>
