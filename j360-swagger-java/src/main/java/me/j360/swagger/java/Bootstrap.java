@@ -1,6 +1,7 @@
 package me.j360.swagger.java;
 
-import java.util.concurrent.locks.LockSupport;
+import me.j360.swagger.java.web.ApiController;
+import org.eclipse.jetty.server.Server;
 
 /**
  * @author: min_xu
@@ -9,7 +10,10 @@ import java.util.concurrent.locks.LockSupport;
  */
 public class Bootstrap {
 
-    public static void main(String[] args) {
-        LockSupport.park();
+    public static void main(String[] args) throws Exception {
+        Server server = new Server(8080);
+        server.setHandler(new ApiController());
+        server.start();
+        server.join();
     }
 }
