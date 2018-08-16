@@ -1,5 +1,6 @@
 ## 使用nginx搭建中央web api文档描述服务器
 
+Http Web API文档描述服务集成配置、打包、服务化shell，nginx + swagge/ spring-boot/springmvc/embeded jetty
 
 ### nginx在整个服务中充当的几个角色
 
@@ -56,4 +57,19 @@ serlvet3.0+springmvn零配置web服务
     3. 其他语言web服务按照swagger规范生成对应的json地址即可
 
 
+## swagger-jetty
 
+springmvc + embeded jetty方式打包常规restful应用
+
+1. mvn package 生成target/j360-swagger-boot.tar.gz
+2. unzip j360-swagger-boot.tar.gz
+
+>
+    命令: service.sh start/status/stop/restart/console/
+
+### 打包工具
+
+1. 启动入口
+2. 打包格式
+3. 应用封装
+4. 应用shell服务化

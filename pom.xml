@@ -9,7 +9,7 @@
     <modules>
         <module>j360-swagger-boot</module>
         <module>j360-swagger-spring</module>
-        <module>j360-swagger-java</module>
+        <module>j360-swagger-jetty</module>
     </modules>
 
     <scm>

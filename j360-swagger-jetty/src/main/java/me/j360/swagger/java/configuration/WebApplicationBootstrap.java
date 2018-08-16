@@ -1,8 +1,9 @@
-package me.j360.swagger.spring.configuration;
+package me.j360.swagger.java.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
@@ -13,8 +14,8 @@ import org.springframework.web.util.UrlPathHelper;
  * equals extends WebMvcConfigurerAdapter
  *
  */
-
-@ComponentScan(value = {"me.j360.swagger.spring"})
+@Import(DelegatingWebMvcConfiguration.class)
+@ComponentScan(value = {"me.j360.swagger.java"})
 @Configuration
 @EnableWebMvc
 public class WebApplicationBootstrap extends WebMvcConfigurerAdapter {
