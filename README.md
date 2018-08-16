@@ -8,6 +8,12 @@ Http Web API文档描述服务集成配置、打包、服务化shell，nginx + s
 2. 服务提供方代理
 3. 统一的跨域配置
 
+### 工程打包部署方案
+ 
+1. swagger-boot:swagger + spring-boot工程
+2. swagger-spring:swagger + springmvc + 外部servlet容器
+3. swagger-jetty:swagger + springmvc + 嵌入式servlet容器
+
 ## nginx配置
 
 - 本地安装好nginx linux yum install nginx/mac brew install nginx
@@ -18,6 +24,7 @@ Http Web API文档描述服务集成配置、打包、服务化shell，nginx + s
 
 >
     分别监听18888路由到8888服务,监听19999路由到9999服务,10000端口为swagger-ui入口
+
 
 ## swagger-boot
 
