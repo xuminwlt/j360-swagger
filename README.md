@@ -1,4 +1,6 @@
-## 使用nginx搭建中央web api文档描述服务器
+## [使用nginx搭建中央web api文档描述服务器()]
+
+[![License](https://img.shields.io/badge/license-Apache%202-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
 
 Http Web API文档描述服务集成配置、打包、服务化shell，nginx + swagge/ spring-boot/springmvc/embeded jetty
 
