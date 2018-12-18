@@ -10,6 +10,7 @@
         <module>j360-swagger-boot</module>
         <module>j360-swagger-spring</module>
         <module>j360-swagger-jetty</module>
+        <module>j360-swagger-boot-shiro</module>
     </modules>
 
     <scm>
@@ -241,6 +242,17 @@
                 <artifactId>springfox-swagger2</artifactId>
                 <version>2.9.2</version>
             </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>2.9.2</version>
+            </dependency>
+            <dependency>
+                <groupId>com.auth0</groupId>
+                <artifactId>java-jwt</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+
 
             <!-- 测试时使用 -->
             <dependency>

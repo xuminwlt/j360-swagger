@@ -83,3 +83,12 @@ springmvc + embeded jetty方式打包常规restful应用
 2. 打包格式
 3. 应用封装
 4. 应用shell服务化
+
+
+### JWT整合
+
+- jwt介绍: http://jwt.io
+
+swagger-boot介绍使用swagger进行header Authorization授权后,可以访问api开头的接口
+
+http://localhost:9999/swagger-ui

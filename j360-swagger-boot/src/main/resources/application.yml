@@ -11,6 +11,8 @@ spring:
       enabled: true
       max-file-size: 100MB
       max-request-size: 100MB
+  resources:
+    static-locations: classpath:/META-INFO/resources/, classpath:/static/
 
 server:
   port: 9999
