@@ -10,7 +10,6 @@
         <module>j360-swagger-boot</module>
         <module>j360-swagger-spring</module>
         <module>j360-swagger-jetty</module>
-        <module>j360-swagger-boot-shiro</module>
     </modules>
 
     <scm>
